@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    ripple:rv_type="rectangle">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"></android.support.v7.widget.Toolbar>
+
+    <CustomView.RippleView
+
+        android:id="@+id/rect"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/actionbar"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content"
+        ripple:rv_type="rectangle"
+        android:background="@drawable/selector_row"
+        android:padding="20dp"
+        ripple:rv_zoom="true">
+
+        <TextView
+            android:id="@+id/rect_child"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="Ripple Effect"
+            android:background="@android:color/holo_green_light"/>
+
+    </CustomView.RippleView>
+
+</RelativeLayout>

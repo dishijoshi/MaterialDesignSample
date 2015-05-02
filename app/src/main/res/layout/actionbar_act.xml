@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+    <com.azilen.mobisales.lollipop_features_app.Custom_Scroll
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_gravity="top"
+                android:src="@color/black" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="ed ashmem. This operates much like the native heap, but has additional system calls. Android can “unpin” the memory rather than freeing it. This is a lazy free; the memory is freed only if the system actually needs more memory. When Android “pins” the memory back, old data will still be there if it hasn't been freed.To understand what Facebook did here, we need to understand the different heaps of memory available on Android.
+
+            The Java heap is the one subject to the strict, per-application limits set by the device manufacturer. All objects created using the Java language's new operator go here. This is a relatively safe area of memory to use. Memory is garbage-collected, so when the app has finished with memory, the system will automatically reclaim it.
+
+            Unfortunately, this process of garbage collection is precisely the problem. To do more than basic reclamations of memory, Android must halt the application completely while it carries out the garbage collection. This is one of the most common causes of an app appearing to freeze or stall briefly while you are using it. It's frustrating for people using the app, and they may try to scroll or press a button — only to see the app wait inexplicably before responding.
+
+            In contrast, the native heap is the one used by the C++ new operator. There is much more memory available here. The app is limited only by the physical memory available on the device. There is no garbage collection and nothing to slow things down. However, C++ programs are responsible for freeing every byte of memory they allocate, or they will leak memory and eventually crash.
+
+            Android has another region of memory, call To understand what Facebook did here, we need to understand the different heaps of memory available on Android.
+
+            The Java heap is the one subject to the strict, per-application limits set by the device manufacturer. All objects created using the Java language's new operator go here. This is a relatively safe area of memory to use. Memory is garbage-collected, so when the app has finished with memory, the system will automatically reclaim it.
+
+            Unfortunately, this process of garbage collection is precisely the problem. To do more than basic reclamations of memory, Android must halt the application completely while it carries out the garbage collection. This is one of the most common causes of an app appearing to freeze or stall briefly while you are using it. It's frustrating for people using the app, and they may try to scroll or press a button — only to see the app wait inexplicably before responding.
+
+            In contrast, the native heap is the one used by the C++ new operator. There is much more memory available here. The app is limited only by the physical memory available on the device. There is no garbage collection and nothing to slow things down. However, C++ programs are responsible for freeing every byte of memory they allocate, or they will leak memory and eventually crash.
+
+            Android has another region of memory, call To understand what Facebook did here, we need to understand the different heaps of memory available on Android.
+
+            The Java heap is the one subject to the strict, per-application limits set by the device manufacturer. All objects created using the Java language's new operator go here. This is a relatively safe area of memory to use. Memory is garbage-collected, so when the app has finished with memory, the system will automatically reclaim it.
+
+            Unfortunately, this process of garbage collection is precisely the problem. To do more than basic reclamations of memory, Android must halt the application completely while it carries out the garbage collection. This is one of the most common causes of an app appearing to freeze or stall briefly while you are using it. It's frustrating for people using the app, and they may try to scroll or press a button — only to see the app wait inexplicably before responding.
+
+            In contrast, the native heap is the one used by the C++ new operator. There is much more memory available here. The app is limited only by the physical memory available on the device. There is no garbage collection and nothing to slow things down. However, C++ programs are responsible for freeing every byte of memory they allocate, or they will leak memory and eventually crash.
+
+            Android has another region of memory, call To understand what Facebook did here, we need to understand the different heaps of memory available on Android.
+
+            The Java heap is the one subject to the strict, per-application limits set by the device manufacturer. All objects created using the Java language's new operator go here. This is a relatively safe area of memory to use. Memory is garbage-collected, so when the app has finished with memory, the system will automatically reclaim it.
+
+            Unfortunately, this process of garbage collection is precisely the problem. To do more than basic reclamations of memory, Android must halt the application completely while it carries out the garbage collection. This is one of the most common causes of an app appearing to freeze or stall briefly while you are using it. It's frustrating for people using the app, and they may try to scroll or press a button — only to see the app wait inexplicably before responding.
+
+            In contrast, the native heap is the one used by the C++ new operator. There is much more memory available here. The app is limited only by the physical memory available on the device. There is no garbage collection and nothing to slow things down. However, C++ programs are responsible for freeing every byte of memory they allocate, or they will leak memory and eventually crash.
+
+            Android has another region of memory, call" />
+
+        </LinearLayout>
+
+    </com.azilen.mobisales.lollipop_features_app.Custom_Scroll>
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar" />
+</FrameLayout>
